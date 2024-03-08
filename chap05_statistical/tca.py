@@ -97,7 +97,7 @@ class TCA:
 
 
 if __name__ == "__main__":
-    folder = '../../office31_resnet50'
+    folder = '../office31_resnet50'
     src_domain = 'amazon'
     tar_domain = 'webcam'
     Xs, Ys, Xt, Yt = load_csv(folder, src_domain, tar_domain)
@@ -106,4 +106,4 @@ if __name__ == "__main__":
 
     tca = TCA(kernel_type='primal', dim=40, lamb=0.1, gamma=1)
     acc, ypre = tca.fit_predict(Xs, Ys, Xt, Yt)
-    print(f'Accuracy : {acc:.2f}')
+    print(f'Accuracy : {100*acc:.4f} %')

@@ -23,6 +23,8 @@ wheels/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
+office31
+office31_resnet50
 .installed.cfg
 *.egg
 MANIFEST
@@ -128,3 +130,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 chap09_deeptransfer/train_log.csv
+
+*.zip
